@@ -120,6 +120,65 @@ Example
 
     Your command?> (define A1 12345.123)
 
-What potential erroneous input will you need to watch out for?
+What potential erroneous inputs will you have to watch out for?
 
 ## Task 3
+Add the capability of inserting a new column. The user should be able to insert a column between exising columns.
+
+    (col_insert_after B)    # insert a new column after Column B
+    (col_insert_before A)   # insert a new column before Column A
+    (col_insert_after)      # insert a new column at the very end.
+    (col_insert_before)     # insert a new column in the very beginning.
+
+Example:
+
+       A     B     C     D
+    *-----------------------*
+    |    1|    2|   11|   22| 1
+    *-----------------------*
+    |    1|    2|   11|   22| 2
+    *-----------------------*
+    |    1|    2|   11|   22| 3
+    *-----------------------*
+
+    Your command? > (col_insert_before B)
+
+       A     B     C     D     E
+    *-----------------------------*
+    |    1|     |    2|   11|   22| 1
+    *-----------------------------*
+    |    1|     |    2|   11|   22| 2
+    *-----------------------------*
+    |    1|     |    2|   11|   22| 3
+    *-----------------------------*
+
+    Your command? >
+
+Notice that the column label got shifted.
+
+
+Example:
+
+       A     B     C     D
+    *-----------------------*
+    |    1|    2|   11|   22| 1
+    *-----------------------*
+    |    1|    2|   11|   22| 2
+    *-----------------------*
+    |    1|    2|   11|   22| 3
+    *-----------------------*
+
+    Your command? > (col_insert_after B)
+
+       A     B     C     D     E
+    *-----------------------------*
+    |    1|    2|     |   11|   22| 1
+    *-----------------------------*
+    |    1|    2|     |   11|   22| 2
+    *-----------------------------*
+    |    1|    2|     |   11|   22| 3
+    *-----------------------------*
+
+    Your command? >
+
+## Task 4
