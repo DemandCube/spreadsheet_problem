@@ -246,3 +246,23 @@ Example:
     *-----------------------*
 
     Your command? >
+
+
+## Task 5
+Add the capability of suming up the whole column or the whole row.
+
+    (col_sum A)             # Calculate the sum of column A and write out the result to the end of col A.
+                            # If there isn't an extra blank cell at the end of column A, come up with
+                            # a reasonable way to handle this case.
+
+    (define B5 (col_sum A)) # Calculate the sum of column A and write out the result to cell B5.
+
+    (row_sum 2)             # Calculate the sum of row 2 and write out the result to the end of row 2.
+                            # Likewise, if there's isn't an available cell at the end of row 2, handle it
+                            # resonably.
+
+    (define E1 (row_sum 1)) # Calculate the sum of row 1 and write out the result to cell E1.
+
+## Task 5
+
+
