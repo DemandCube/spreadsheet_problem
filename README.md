@@ -68,6 +68,7 @@ Example:
 If the length of the float number is larger than the default 5 space cell width, truncate the number and make the last character to be '>' to denote truncated values.
 
 Example:
+
        A     B     C     D
     *-----------------------*
     | 3.14|     |     |     | 1
@@ -80,6 +81,7 @@ Example:
     Your command?> (define A1 3.1415926)
 
 [enter]
+
        A     B     C     D
     *-----------------------*
     |3.14>|     |     |     | 1
@@ -93,6 +95,7 @@ Example:
 
 
 Example
+
        A     B     C     D
     *-----------------------*
     |3.14>|     |     |     | 1
@@ -105,6 +108,7 @@ Example
     Your command?> (define A1 12345.123)
 
 [enter]
+
        A     B     C     D
     *-----------------------*
     |1234>|     |     |     | 1
