@@ -123,7 +123,7 @@ Example
 What potential erroneous inputs will you have to watch out for?
 
 ## Task 3
-Add the capability of inserting a new column. The user should be able to insert a column between exising columns.
+Add the capability of inserting a new column. The user needs to be able to insert a column between existing columns.
 
     (col_insert_after B)    # insert a new column after Column B
     (col_insert_before A)   # insert a new column before Column A
@@ -181,4 +181,68 @@ Example:
 
     Your command? >
 
+
 ## Task 4
+Add the capability of inserting a new row. The user needs to be able to insert a row between existing rows.
+
+    (row_insert_after 1)    # insert a new row after row 1
+    (row_insert_before 1)   # insert a new row before row 1
+    (row_insert_after)      # insert a new row at the very end
+    (row_insert_before)     # insert a new row in the very beginning
+
+Example:
+
+       A     B     C     D
+    *-----------------------*
+    |    1|    2|   11|   22| 1
+    *-----------------------*
+    |    1|    2|   11|   22| 2
+    *-----------------------*
+    |    1|    2|   11|   22| 3
+    *-----------------------*
+
+    Your command? > (row_insert_after 1)
+
+[enter]
+
+       A     B     C     D
+    *-----------------------*
+    |    1|    2|   11|   22| 1
+    *-----------------------*
+    |     |     |     |     | 2
+    *-----------------------*
+    |    1|    2|   11|   22| 3
+    *-----------------------*
+    |    1|    2|   11|   22| 4
+    *-----------------------*
+
+    Your command? >
+
+
+Example:
+
+       A     B     C     D
+    *-----------------------*
+    |    1|    2|   11|   22| 1
+    *-----------------------*
+    |    1|    2|   11|   22| 2
+    *-----------------------*
+    |    1|    2|   11|   22| 3
+    *-----------------------*
+
+    Your command? > (row_insert_before 1)
+
+[enter]
+
+       A     B     C     D
+    *-----------------------*
+    |     |     |     |     | 1
+    *-----------------------*
+    |    1|    2|   11|   22| 2
+    *-----------------------*
+    |    1|    2|   11|   22| 3
+    *-----------------------*
+    |    1|    2|   11|   22| 4
+    *-----------------------*
+
+    Your command? >
