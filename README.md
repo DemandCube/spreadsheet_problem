@@ -249,20 +249,33 @@ Example:
 
 
 ## Task 5
-Add the capability of suming up the whole column or the whole row.
+Add the capability of summing up across the values in a row or column range.
+    (+ A1:D1)     # Calculate the sum of row 2 and write out the result to the end of row 1.
+                    # If there's isn't an available cell at the end of row 1, handle it
+                    # resonably.
 
-    (col_sum A)             # Calculate the sum of column A and write out the result to the end of col A.
-                            # If there isn't an extra blank cell at the end of column A, come up with
-                            # a reasonable way to handle this case.
+    (+ A1:A4)     # Calculate the sum of column A and write out the result to the end of col A.
+                    # Likewise, if there isn't an extra blank cell at the end of column A, come up with
+                    # a reasonable way to handle this case.
 
-    (define B5 (col_sum A)) # Calculate the sum of column A and write out the result to cell B5.
+    (define B5 (+ A1:A4)) # Calculate the sum of column A and write out the result to cell B5.
 
-    (row_sum 2)             # Calculate the sum of row 2 and write out the result to the end of row 2.
-                            # Likewise, if there's isn't an available cell at the end of row 2, handle it
-                            # resonably.
-
-    (define E1 (row_sum 1)) # Calculate the sum of row 1 and write out the result to cell E1.
 
 ## Task 5
+Add a command line argument (-csv) to take in a csv file. Display the content of the csv file inside your ASCII spreadsheet program.
 
+## Task 6
+Add the capability to resize cell's width.
 
+    (resize_column A 10) # Resize it to 10 characters
+
+## Task 7
+Add the ability to format numbers with 1000 separators. For example, 1000 can be displayed as 1,000.
+    (num_separator A2)       # format only one cell
+    (num_separator A1:A4)    # format the whole column
+
+Note: your sum function should still work, regardless of the numbering format.
+
+## Task 8
+Complex formula.
+   (define A3 (/ (+ A1:D1) D4))
