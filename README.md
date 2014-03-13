@@ -2,8 +2,9 @@
 
 Background
 ==========
-Your task is to build a spreadsheet from scratch in Java or C++. Please document your steps as you go as we may ask you to justify your implementation after you turned in your work. Do comment your code. Unit tests are not required but highly recommended. Please tell us how to compile and run your code upon submission. A tarball submission will suffice.
+Your task is to build a spreadsheet from scratch in Java. Please document your steps as you go as we may ask you to justify your implementation after you turned in your work. Do comment your code. Unit tests are not required but highly recommended. Please tell us how to compile and run your code upon submission. A tarball submission will suffice.
 
+You might also want to finish reading all the sections first before embarking on the actual implementation.
 
 ## Task 0
 Print out to the screen a 4x3 spreadsheet with empty cells. Each cell should have exactly 5 spaces in it. The following is exactly what you should print out to the screen.
