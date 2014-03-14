@@ -270,13 +270,13 @@ Add the capability to resize cell's width.
 
     (resize_column A 10) # Resize it to 10 characters
 
-## Task 7
+## Task 7 (Optional)
 Add the ability to format numbers with 1000 separators. For example, 1000 can be displayed as 1,000.
     (num_separator A2)       # format only one cell
     (num_separator A1:A4)    # format the whole column
 
 Note: your sum function should still work, regardless of the numbering format.
 
-## Task 8
+## Task 8 (Optional)
 Complex formula.
    (define A3 (/ (+ A1:D1) D4))
